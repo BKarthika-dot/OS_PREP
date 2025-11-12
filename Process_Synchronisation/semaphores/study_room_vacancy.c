@@ -86,8 +86,8 @@ int main(){
         pthread_join(Club_B[i],NULL);
     }
 
-    sem_destroy(seats);
-    sem_destroy(clubB_limit);
-    sem_destroy(clubA_limit);
+    sem_destroy(&seats);
+    sem_destroy(&clubB_limit);
+    sem_destroy(&clubA_limit);
     sem_destroy(&mutex);
 }
